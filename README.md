@@ -225,12 +225,3 @@ Congratulations! 🎉 You've successfully deployed a Reddit clone web app on a K
 This README.md file provides a comprehensive step-by-step guide for deploying a Reddit Clone Web App on a Kubernetes cluster hosted on AWS, including the additional steps you requested.
 
 ```
-
-
-
-
-
-
-
-
-# reddit-clone-deployed-kubernetes-cluster
