@@ -21,26 +21,17 @@ This Reddit clone web application deployed on a Kubernetes cluster has several p
 
 Begin by accessing the AWS console and creating two instances with specific configurations:
 
-**CI-Server:**
-- AMI: Ubuntu
-- Type: t2.micro
-
 **Deployment Server:**
 - AMI: Ubuntu
 - Type: t2.medium
 
 Ensure that you name these instances accordingly for easy reference.
 
-## Step 2: Clone the Code on CI-Server 📂
+## Step 2: Clone the Code📂
 
-On the CI-Server, clone the codebase of your Reddit clone web application.
+Clone the codebase of your Reddit clone web application.
 
 ## Step 3: Prerequisites 🛠️
-
-**On CI-Server:**
-- Update the server: `sudo apt-get update`
-- Install Docker: `sudo apt-get install docker.io -y`
-- Give permission to Docker: `sudo usermod -aG docker $USER && newgrp docker`
 
 **On Deployment Server:**
 - Update the server: `sudo apt-get update`
@@ -77,7 +68,7 @@ CMD ["npm","run","dev"]
 Build the Docker image from the Dockerfile using the following command:
 
 ```
-docker build . -t chxtan/reddit-clone
+docker build . -t sumanprasad007/reddit-clone
 
 ```
 
@@ -87,7 +78,7 @@ After building the image, push it to Docker Hub by running:
 ```
 docker login
 # Enter your username and password
-docker push chxtan/reddit-clone
+docker push sumanprasad007/reddit-clone
 
 ```
 
